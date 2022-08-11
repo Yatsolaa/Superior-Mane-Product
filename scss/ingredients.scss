@@ -23,3 +23,24 @@
         }
     }
 }
+
+@media(max-width: 768px){
+
+    .ingredients{
+
+        .container{
+
+            .content-block{
+
+                .ingredient-block{
+
+                    .header-wrapper{
+                        display: flex;
+                        column-gap: 16px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

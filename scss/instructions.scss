@@ -1,0 +1,53 @@
+.instructions{
+    
+    .content-block{
+
+        .instructions__text{
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h4{
+                margin-bottom: 16px;
+            }
+        }
+
+        .instructions__img{
+            flex-basis: 50%;
+
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+
+    .instructions{
+
+        .container{
+
+            .content-block{
+                flex-direction: column-reverse;
+                margin-bottom: 24px;
+                row-gap: 0;
+                
+                .instructions__text{
+                    text-align: left;
+
+                    h4{
+                        margin-bottom: 0;
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

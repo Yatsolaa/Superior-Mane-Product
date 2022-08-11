@@ -39,3 +39,32 @@
     }
 
 }
+
+@media (max-width: 768px){
+    
+    .text-with-image-section{
+
+        .content-wrapper{
+
+            .text-with-image-section__text{
+
+                p{
+                    font-size: 14px;
+                }
+
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    width: 100%;
+                    max-width: 487px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .text-with-image-section__image{
+                display: none;
+            }
+        }
+    }
+}

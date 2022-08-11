@@ -3,4 +3,5 @@
 }
 .three-img-section .content-block .three-img-section__img img {
   width: 100%;
+  border-radius: 8px;
 }

@@ -102,3 +102,40 @@ h6{
     background: #5F7B87;
     border-radius: 8px;
 }
+
+@import "text-with-image-section.scss";
+@import "results1.scss";
+@import "three-img-section.scss";
+@import "ingredients.scss";
+@import "instructions.scss";
+@import "footer.scss";
+
+@media(max-width: 768px){
+    
+    section{
+        padding: 40px 15px;
+    }
+
+    h1, h2{
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4, h5{
+        font-size: 22px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+
+    .content-block{
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
