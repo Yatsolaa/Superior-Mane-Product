@@ -1,0 +1,87 @@
+.footer{
+    padding: 60px 15px;
+
+    .accordion{
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-between;
+        
+        .accordion-item{
+            width: 100%;
+
+            .accordion-item__trigger{
+                padding-bottom: 15px;
+                border-bottom: 1px solid #383838;;
+                display: flex;
+                justify-content: space-between;
+
+                .accordion-item__header{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                
+                .plus{
+                    transition: all 0.2s;
+                    display: inline-block;
+                    width: 2px;
+                    height: 15px;
+                    background-color: #fff;
+                    margin-right: -1px;
+                }
+
+                .minus{
+                    display: inline-block;
+                    width: 16px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin: 0 0 6px -13px;
+                }
+            }
+
+            .accordion-item__content{
+                display: none;
+
+                .accordion-item__list{
+                    font-size: 14px;
+                    color: #fff;
+                    text-decoration: underline;
+
+                    li{
+                        list-style-type: none;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .accordion-item--active{
+
+            .accordion-item__trigger{
+                .plus{
+                    transition: all 0.2s;
+                    height: 2px;
+                    margin: 0 0 6px -13px;
+                }
+            }
+
+            .accordion-item__content{
+                display: block;
+            }
+        }
+    }
+
+    .social-media{
+        margin-top: 60px;
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 768px){
+    .accordion{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+}

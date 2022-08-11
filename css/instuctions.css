@@ -1,0 +1,17 @@
+.instructions .content-block .instructions__text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.instructions .content-block .instructions__text h4 {
+  margin-bottom: 16px;
+}
+.instructions .content-block .instructions__img {
+  flex-basis: 50%;
+}
+.instructions .content-block .instructions__img img {
+  width: 100%;
+  border-radius: 8px;
+}

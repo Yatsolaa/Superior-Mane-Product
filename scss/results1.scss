@@ -1,0 +1,48 @@
+.results{
+    
+    .content-block{
+
+        .result-block{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .results__number{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 19px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 24px;
+                left: 24px;
+                height: 53px;
+                width: 53px;
+                border-radius: 100%;
+                background: #272727;
+            }
+
+            .results__img{
+                width: 100%;
+                margin-bottom: 8px;
+
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+
+            .results__text{
+                flex-grow: 1;
+
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+
+    }
+
+}

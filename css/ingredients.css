@@ -1,0 +1,13 @@
+.ingredients p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.ingredients .content-block .ingredient-block {
+  width: 100%;
+}
+.ingredients .content-block_mb60 {
+  margin-bottom: 60px;
+}
+.ingredients .ingredients-text-block h5 {
+  text-transform: uppercase;
+}
