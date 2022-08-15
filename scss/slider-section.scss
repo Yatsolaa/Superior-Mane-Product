@@ -1,0 +1,264 @@
+.section-with-slider-wrapper{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    column-gap: 60px;
+
+    .slider{
+        width: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        column-gap: 12px;
+    
+    
+        .slider-for{
+            max-height: 650px;
+            min-width: 0;
+            width: 100%;
+    
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 12px;
+            }
+        }
+    
+        .slider-nav{
+            max-width: 86px;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 24px;
+    
+            .slider__item{
+                overflow: hidden;
+                height: 115px;
+                width: 86px;
+    
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 4px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+    
+            .slick-arrow{
+                font-size: 0;
+                height: 56px;
+                width: 56px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                background-color: #fff;
+            }
+    
+            .slick-arrow:hover{
+                cursor: pointer;
+                background-color: rgb(110, 110, 110);
+            }
+    
+            .slick-prev{
+                background: url(../img/arrow-up.png) 0 0 no-repeat;
+                background-position: center;
+            }
+    
+            .slick-next{
+                background: url(../img/arrow-down.png) 0 0 no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    .section-with-slider__text{
+
+        .header-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1, .yellow-bg-text{
+                margin-bottom: 25px;
+            }
+    
+            .yellow-bg-text{
+                padding: 1px 6px;
+                color: #272727;
+                font-size: 12px;
+                background: #E3BA95;
+                border-radius: 2px;
+            }
+        }
+
+        .price-and-rating{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 25px;
+
+            .price{
+                font-size: 30px;
+
+                span{
+                    font-size: 18px;
+                    color: #828282;
+                    text-decoration: line-through;
+                }
+            }
+
+            .rating{
+                column-gap: 10px;
+                display: flex;
+
+                .rating-text{
+                    
+                    span{
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .text{
+            color: #FFFFFF;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        .bold-text{
+            opacity: 1;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .buttons-block{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .button{
+                color:#fff;
+                font-weight: 700;
+                font-size: 12px;
+                text-transform: uppercase;
+                width: 100%;
+                height: 56px;
+                border-radius: 4px;
+            }
+
+            .buy-button{
+                border: 1.2px solid #FFFFFF;
+                opacity: 0.8;
+                background-color: #272727;
+            }
+
+            .buy-button:hover{
+                background: #5F7B87;
+                opacity: 1;
+            }
+
+            .add-to-cart-button{
+                background-color: #FF9900;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    .section-with-slider{
+        padding: 0;
+
+        .section-with-slider-wrapper{
+            margin-top: -74px;
+            padding: 0 0 60px 0;
+            flex-direction: column;
+    
+            .slider{
+                width: 100%;
+    
+                .slider-for{
+    
+                    img{
+                        border-radius: 0;
+                    }
+
+                    .slick-arrow{
+                        z-index: 10;
+                        position: absolute;
+                        top: 50%;
+                        font-size: 0;
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 50%;
+                        border: 1px solid #272727;
+                    }
+
+                    .slick-prev{
+                        background: url(../img/arrow-left.svg) 0 0 no-repeat;
+                        background-position: center;
+                        left: 15px;
+                    }
+
+                    .slick-next{
+                        background: url(../img/arrow-right.svg) 0 0 no-repeat;
+                        background-position: center;
+                        right: 15px;
+                    }
+                }
+    
+                .slider-nav{
+                    display: none;
+                }
+            }
+
+            .section-with-slider__text{
+                position: relative;
+                z-index: 5;
+                padding: 24px 16px;
+                background: #272727;
+                border: 1.4px solid #383838;
+                border-radius: 8px;
+                margin: 0 15px;
+                margin-top: -90px;
+
+                .header-wrapper{
+                    .yellow-bg-text{
+                        display: none;
+                    }
+                }
+
+                .price-and-rating{
+
+                    .price{
+                        font-size: 24px;
+
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+
+                    .rating{
+                        flex-direction: column;
+
+                        .rating-text{
+
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .text{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
